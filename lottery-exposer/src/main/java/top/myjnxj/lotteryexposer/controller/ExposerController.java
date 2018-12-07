@@ -2,6 +2,7 @@ package top.myjnxj.lotteryexposer.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +20,7 @@ import top.myjnxj.lotteryexposer.util.TokenUtil;
  * @Date 2018/12/6 21:33
  * @Version 1.0.0
  **/
+@CrossOrigin
 @RestController
 public class ExposerController {
     @Autowired
