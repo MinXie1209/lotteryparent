@@ -1,6 +1,6 @@
 > 本项目是一个抽奖系统
 1. 对服务业务进行拆分，以分布式部署提高连接数
-2. 具体部署部署步骤请看[docker部署抽奖系统](https://www.github.com/xyj1209/docker-compose-lottery-parent)
+2. 具体部署部署步骤请看[docker部署抽奖系统](https://github.com/xyj1209/docker-compose-lottery)
 
 > 打包前，需要注意的几个地方
 1. 本项目划分为三个模块，lottery-core(抽奖)、lottery-login(登录)、lottery-exposer(暴露接口)
