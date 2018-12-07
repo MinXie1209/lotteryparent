@@ -1,0 +1,38 @@
+spring:
+    redis:
+        database: 1
+        port: 6379
+        host: redis
+        password:
+        jedis:
+          pool:
+            max-active: 8
+            max-idle: 8
+            max-wait: 2000ms
+            min-idle: 2
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driverClassName: com.mysql.jdbc.Driver
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://db:3306/lottery?useUnicode=true&characterEncoding=utf-8&userSSL=false&serverTimezone=GMT%2B8
+        username: root
+        password: javatribe
+        initialSize: 5
+        minIdle: 5
+        maxActive: 20
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: SELECT1FROMDUAL
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        filters: stat,wall,log4j
+        logSlowSql: true
+        platform: mysql
+#mybatis
+mybatis:
+    type-aliases-package: top.myjnxj.lotteryexposer.po
+    mapper-locations: classpath:mapping/*.xml
+server:
+  port: 80
